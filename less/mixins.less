@@ -1,1 +1,19 @@
 // Mixins in here
+.button-design(@color-bg, @text-color) {
+  display: block;
+  background-color: @color-bg;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 150px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: @text-color;
+  text-align: center;
+  padding: 12px; 
+
+  @media @mobile {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
