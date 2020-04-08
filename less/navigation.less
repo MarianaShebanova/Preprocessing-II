@@ -1,1 +1,31 @@
 // Navigation Styles here
+
+  header {
+    border-bottom: 2px dashed @navigation-border;
+    margin: 20px 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+
+    @media @mobile {
+      flex-direction: column;
+    }
+
+    h1 {
+      align-self: flex-start;
+      @media @mobile {
+        align-self: center;
+      }
+
+    } // this closes the h1
+
+    nav {
+      margin-left: 62px;    
+      a {
+        margin-left: 20px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+      }// this closes the links 
+    }//this closes the nav
+  }//this closes the header
